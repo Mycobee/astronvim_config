@@ -12,6 +12,10 @@ return {
   {
     "folke/tokyonight.nvim",
     opts = {},
-    event = "User AstroFile",
+    lazy = false,
+    config = function()
+      -- load the colorscheme here
+      vim.cmd([[colorscheme tokyonight]])
+    end,
   },
 }
